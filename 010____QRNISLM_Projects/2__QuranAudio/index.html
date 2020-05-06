@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"-->
+
+    <!-- SELECT2 -->
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="css/select2.css" rel="stylesheet"/>
+    <script src="js/select2.js"></script>
+    <script>
+        $(document).ready(function() { $("#reciterName").select2(); });
+    </script-->
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" />
+		<title>Quran Audio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+
+
+
+
+
+	</head>
+	<body >
+
+<div class="container-fluid">
+<!-- <div class="jumbotron"> -->
+
+
+  <!--
+      ***********************************************************
+                                Header
+      ***********************************************************
+  -->
+
+
+    <div class="row mb-0">
+        <div class="col-12">
+        <h1>Quran Audio</h1>
+        </div>
+    </div>
+
+    <!-- <div class="row mb-0">
+        <div class="col-12">
+        <p>وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ</p>
+        </div>
+    </div> -->
+
+    <div class="row mb-3 mt-0">
+        <div class="col-12">
+        <hr class=" hr-success">
+        </div>
+    </div>
+
+    <div class="row mb-3 justify-content-center">
+        <div class="col-12">
+          <div class="btn-group pr-1">
+            <!-- <div class="d-flex justify-content-center"> -->
+            <button type="button"  id="ayaKursi"  class="btn  -dirPlayBtn"  >A.Kursi</button>
+            <button type="button"  id="surahMulk" class="btn  -dirPlayBtn"  >Mulk</button>
+            <button type="button" id="surahKahf" class="btn  -dirPlayBtn"  >Kahf</button>
+            <button type="button"  id="surahSajada" class="btn  -dirPlayBtn" >Sajada</button>
+          <!-- </div> -->
+          </div>
+        </div>
+    </div>
+
+      <div class="row mb-3">
+        <div class="col-12">
+        <h4>
+        <span class="-loadingMsg" id="loadingmsg">&nbsp </span>
+        <span class="-errorMsg" id="errMsg">&nbsp </span>
+        <span class="-playingNowMsg float-right" id="playingNowMsg">&nbsp </span> 
+
+      </h4>
+      </div>
+      </div>
+    <!--
+        ***********************************************************
+                                  Audio Player
+        ***********************************************************
+    -->
+
+    <!--div class="row mt-1">
+
+        <div class="col-12">
+        <audio  id="QurAudio" controls preload="auto" loop></audio>
+        </div>
+    </div-->
+
+
+
+    <!--
+        ***********************************************************
+                                  Reciters List
+        ***********************************************************
+    -->
+
+    <!-- <div class="row my-1">
+    <div class="col-12">
+    <div class="audio-player" id="audPlayerDiv"></div>
+    <audio id="audPlayer" controls style="display:none;">
+
+    </audio>
+  </div>
+</div> -->
+    <!-- COL2 -->
+
+    <div class="row my-1">
+
+        <div class="col-12">
+        <div class="input-group">
+        <select id="reciterList" class="select2 form-control form-control-lg" >
+        <option value="Alafasy_128kbps">Mishary</option>
+        <option value="Abdul_Basit_Mujawwad_128kbps">A.Basit</option>
+        <option value="Ghamadi_40kbps">Ghamadi</option>
+        <option value="Abdurrahmaan_As-Sudais_192kbps">Sudais</option>
+        <option value="Minshawy_Mujawwad_192kbps">Minshawy</option>
+        <option value="khalefa_al_tunaiji_64kbps">Tunaiji</option>
+        <option value="Saood_ash-Shuraym_128kbps">Shuraym</option>
+        </select>
+        </div>
+        </div>
+
+
+
+
+    </div>
+
+
+      <!--
+          ***********************************************************
+                                      Surah Number
+          ***********************************************************
+      -->
+
+
+
+
+
+    <div class="row my-1">
+
+      <div class="col-12">
+      <div class="input-group">
+      <input type="number" id="surah" min="1" max="5" class="form-control form-control-lg" placeholder="Surah Number" >
+      </div>
+      </div>
+
+
+
+    </div>
+
+      <!--
+          ***********************************************************
+                                  Aya Number
+          ***********************************************************
+      -->
+
+
+          <div class="row my-1">
+              <div class="col-12">
+              <div class="input-group">
+              <input type="number" id="ayaFrm" class="form-control form-control-lg"  placeholder="Aya Number (From)">
+              </div>
+              </div>
+          </div>
+
+          <div class="row my-1">
+              <div class="col-12">
+              <div class="input-group">
+              <input type="number" id="ayaTo" class="form-control form-control-lg"  placeholder="Aya Number (To)">
+              </div>
+              </div>
+          </div>
+
+
+
+
+
+
+    <!--
+        ***********************************************************
+                                  Buttons
+        ***********************************************************
+    -->
+
+    <!-- COL2 -->
+<div class="row my-2">
+
+          <div class="col-12">
+
+
+            <div class="btn-group">
+
+              <button type="button"  id="prevBtn"  class="btn -pageBtns  mr-1"  >&lt;&lt;</button>
+              <button type="button"  id="nextBtn" class="btn -pageBtns mr-3"  >&gt;&gt;</button>
+
+              <button type="button" id="pauseBtn" class="btn -pageBtns  mr-1"  >Pause</button>
+              <!--button type="button"  id="playBtn" class="btn -pageBtns mr-1" onclick="playAudio()">Play</button-->
+              <button type="button"  id="playBtn" class="btn -pageBtns mr-1"  >Play</button>
+
+            </div>
+
+
+          </div>
+
+
+
+
+
+
+</div>
+
+
+<!--
+    ***********************************************************
+                              Buttons
+    ***********************************************************
+-->
+<!-- <div class="row my-1">
+    <div class="col-12">
+    <div class="cardQr">
+     <p id="qurReadArb"> </p>
+    </div>
+    </div>
+</div> -->
+
+
+
+      <!--div class="form-group">
+      <div class="row my-2">
+          <div class="col-12">
+          <div class="input-group">
+          <select id="reciterName" class="select2  form-control selectOption">
+          <option value="Alafasy_64kbps">Mishary</option>
+          <option value="Abdul_Basit_Mujawwad_128kbps">A.Basit</option>
+          <option value="Ghamadi_40kbps">Ghamadi</option>
+          <option value="Minshawy_Mujawwad_192kbps">Minshawy</option>
+          <option value="khalefa_al_tunaiji_64kbps">Tunaiji</option>
+          <option value="Husary_128kbps_Mujawwad">Husary</option>
+          </select>
+          </div>
+          </div>
+      </div>
+
+
+
+          <div class="row my-2">
+              <div class="col-12">
+              <div class="input-group">
+              <select id="reciterName" class="select2 form-control ">
+              <optgroup label="Alaskan/Hawaiian Time Zone">
+              <option value="AK">Alaska</option>
+              <option value="HI">Hawaii</option>
+              </optgroup>
+              <optgroup label="Pacific Time Zone">
+              <option value="CA">California</option>
+              <option value="NV">Nevada</option>
+              <option value="OR">Oregon</option>
+              <option value="WA">Washington</option>
+              </optgroup>
+              </select>
+              </div>
+              </div>
+          </div>
+      </div-->
+
+
+<!-- END -->
+
+
+
+
+
+<!--
+    ***********************************************************
+    TEEEEEEEMP
+    ***********************************************************
+-->
+
+<!-- COL2 -->
+
+
+
+<!--
+    ***********************************************************
+    END
+    ***********************************************************
+-->
+</div>
+
+
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+
+      <!-- <script src="js/form-select2.js" charset="utf-8"></script> -->
+			<script src="js/scripts.js"></script>
+
+	</body>
+</html>
