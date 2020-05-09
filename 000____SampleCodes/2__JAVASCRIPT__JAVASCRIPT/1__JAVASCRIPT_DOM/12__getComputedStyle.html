@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <div>
+<strong style="color:red">Hello</strong>
+
+  </div>
+<button onclick="myFunction()">Click me to show getComputedStyle</button>
+
+<script>
+
+
+/*
+   *********************************************************************************************************************************
+                                                              createDocumentFragment
+   *********************************************************************************************************************************
+*/
+function myFunction() {
+  var divStyle = getComputedStyle(document.querySelector('div'));
+  var strStyle = getComputedStyle(document.querySelector('strong'));
+alert('Width of DIV: '+divStyle.width);
+alert('Color of strong: '+strStyle.color);
+}
+
+
+</script>
+
+</body>
+</html>

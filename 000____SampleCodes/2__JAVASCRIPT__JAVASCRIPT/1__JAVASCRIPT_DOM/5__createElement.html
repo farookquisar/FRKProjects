@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div></div>
+<button onclick="myFunction()">Click me to create new paragraph element</button>
+
+<script>
+
+
+/*
+   *********************************************************************************************************************************
+                                                              createElement
+   *********************************************************************************************************************************
+*/
+function myFunction() {
+var div = document.querySelector('div');
+var strong = document.createElement('strong');
+strong.textContent = 'Hello';
+div.appendChild(strong);
+}
+
+
+</script>
+
+</body>
+</html>

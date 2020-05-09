@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button type="button" name="button" onclick="myFunction()">Click Me</button>
+<p>paragraph one</p>
+<p>paragraph two</p>
+<div>div one</div>
+<p>paragraph three</p>
+<div>div two</div>
+
+
+
+<script>
+
+/*
+   *********************************************************************************************************************************
+                                                              1. querySelector()
+   *********************************************************************************************************************************
+   selector – one or more CSS selectors, such as "#fooId", ".fooClassName", ".class1.class2", or ".class1, .class2"
+*/
+
+
+
+function myFunction() {
+  var firstDiv = document.querySelector('div');
+firstDiv.style.color = 'red';
+}
+
+
+</script>
+
+</body>
+</html>

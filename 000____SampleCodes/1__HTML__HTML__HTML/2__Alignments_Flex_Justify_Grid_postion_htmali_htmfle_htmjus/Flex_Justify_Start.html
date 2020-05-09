@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style >
+.xopacity1{background-color: rgba(245, 245, 245, 1);
+  opacity: .4;}
+</style>
+<title>Flex_Justify_Start</title>
+</head>
+<body>
+<div class="d-flex justify-content-start bg-light text-white ">
+<button class="btn btn-lg btn-primary mr-sm-2 mt-sm-2" type="submit">start</button>
+<button class="btn btn-lg btn-primary mr-sm-2 mt-sm-2" type="submit">start</button>
+<button class="btn btn-lg btn-primary mr-sm-2 mt-sm-2" type="submit">start</button>
+</div>
+<hr>
+<div class="d-flex justify-content-end">
+<button class="btn btn-lg btn-secondary mr-sm-2 mt-sm-2" type="submit">end</button>
+<button class="btn btn-lg btn-secondary mr-sm-2 mt-sm-2" type="submit">end</button>
+<button class="btn btn-lg btn-secondary mr-sm-2 mt-sm-2" type="submit">end</button>
+</div>
+
+<hr>
+<div class="d-flex justify-content-center">
+<button class="btn btn-lg btn-success mr-sm-2 mt-sm-2" type="submit">center</button>
+<button class="btn btn-lg btn-success mr-sm-2 mt-sm-2" type="submit">center</button>
+<button class="btn btn-lg btn-success mr-sm-2 mt-sm-2" type="submit">center</button>
+</div>
+
+<hr>
+<div class="d-flex justify-content-between">
+<button class="btn btn-lg btn-outline-danger mr-sm-2 mt-sm-2" type="submit">between</button>
+<button class="btn btn-lg btn-danger mr-sm-2 mt-sm-2" type="submit">between</button>
+<button class="btn btn-lg btn-danger mr-sm-2 mt-sm-2" type="submit">between</button>
+</div>
+
+<hr>
+<div class="d-flex justify-content-around">
+<button class="btn btn-lg btn-warning mr-sm-2 mt-sm-2" type="submit">around</button>
+<button class="btn btn-lg btn-outline-warning mr-sm-2 mt-sm-2" type="submit">around</button>
+<button class="btn btn-lg btn-warning mr-sm-2 mt-sm-2" type="submit">around</button>
+</div>
+
+<hr>
+<div class="d-flex bd-highlight mb-3">
+  <div class="mr-auto p-2 bd-highlight"><button class="btn btn-lg btn-dark mr-sm-2 mt-sm-2" type="submit">Left</button></div>
+  <div class="p-2 bd-highlight"><button class="btn btn-lg btn-dark mr-sm-2 mt-sm-2" type="submit">Right</button></div>
+  <div class="p-2 bd-highlight"><button class="btn btn-lg btn-dark mr-sm-2 mt-sm-2" type="submit">Right</button></div>
+</div>
+
+
+<hr>
+<div class="d-flex bd-highlight mb-3">
+  <div class="p-2 bd-highlight"><button class="btn btn-lg btn-dark mr-sm-2 mt-sm-2" type="submit">left</button></div>
+  <div class="p-2 bd-highlight"><button class="btn btn-lg btn-dark mr-sm-2 mt-sm-2" type="submit">left</button></div>
+  <div class="ml-auto p-2 bd-highlight"><button class="btn btn-lg btn-dark mr-sm-2 mt-sm-2" type="submit">right</button></div>
+</div>
+
+<div class="d-flex flex-nowrap bd-highlight">
+  <div class="order-3 p-2 bd-highlight"><button class="btn btn-lg btn-success mr-sm-0 mt-sm-2" type="submit">First flex item</button></div>
+  <div class="order-2 p-2 bd-highlight"><button class="btn btn-lg btn-success mr-sm-0 mt-sm-2" type="submit">Second flex item</button></div>
+  <div class="order-1 p-2 bd-highlight"><button class="btn btn-lg btn-success mr-sm-0 mt-sm-2" type="submit">Third flex item</button></div>
+</div>
+
+<div class="d-flex justify-content-end">
+<div class="btn-group">
+  <button type="button" class="btn btn-outline-warning mr-sm-2 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Separated link</a>
+  </div>
+</div>
+</div>
+
+<hr>
+<div class="d-flex  mb-3">
+  <div class="p-2 "><button class="btn btn btn-outline-warning" type="submit" onclick="location.href='https://google.com';">left</button></div>
+
+  <div class="ml-auto p-2 ">
+    <button type="button" class="btn btn-outline-warning mr-sm-2 dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Action
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!--
+    ***********************************************************
+    navigation
+    ***********************************************************
+-->
+
+<nav class="navbar  sticky-top navbar-light bg-gradient-dark">
+
+      <div class="d-flex  mb-3">
+
+      <div class="p-2 "><button class="btn btn btn-outline-warning" type="submit" onclick="location.href='https://google.com';">Score</button></div>
+
+      <div class="ml-auto p-2 ">
+      <button type="button" class="btn btn-outline-warning mr-sm-2 dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Recordings
+      </button>
+      <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+      </div>
+      </div>
+      </div>
+
+</nav>
+
+
+
+<!--
+    ***********************************************************||
+    Comment Here
+    ***********************************************************||
+-->
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

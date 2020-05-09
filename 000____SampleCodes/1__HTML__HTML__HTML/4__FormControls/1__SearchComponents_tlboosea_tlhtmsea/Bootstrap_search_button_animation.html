@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<!--***********************************************************-->
+<head>
+<!--***********************************************************-->
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<title>Change the Title </title>
+<link rel="stylesheet" href="1__tmphtml__thtml_ffhtml.css">
+
+<style >
+$background-color: #2A2E37;
+$search-bg-color: #242628;
+$icon-color: #00FEDE;
+$transition: all .5s ease;
+* {
+box-sizing: border-box;
+}
+
+body {
+background: $background-color;
+}
+
+.search {
+width: 100px;
+height: 100px;
+margin: 40px auto 0;
+background-color: $search-bg-color;
+position: relative;
+overflow: hidden;
+transition: $transition;
+&:before {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 100%;
+  position: relative;
+  background-color: $icon-color;
+  transition: $transition;
+}
+&.open {
+  width: 420px;
+  &:before {
+    height: 60px;
+    margin: 20px 0 20px 30px;
+    position: absolute;
+  }
+}
+}
+
+.search-box {
+width: 100%;
+height: 100%;
+box-shadow: none;
+border: none;
+background: transparent;
+color: #fff;
+padding: 20px 100px 20px 45px;
+font-size: 40px;
+&:focus {
+  outline: none;
+}
+}
+
+.search-button {
+width: 100px;
+height: 100px;
+display: block;
+position: absolute;
+right: 0;
+top: 0;
+padding: 20px;
+cursor: pointer;
+}
+
+.search-icon {
+width: 40px;
+height: 40px;
+border-radius: 40px;
+border: 3px solid $icon-color;
+display: block;
+position: relative;
+margin-left: 5px;
+transition: $transition;
+&:before {
+  content: '';
+  width: 3px;
+  height: 15px;
+  position: absolute;
+  right: -2px;
+  top: 30px;
+  display: block;
+  background-color: $icon-color;
+  transform: rotate(-45deg);
+  transition: $transition;
+}
+&:after {
+  content: '';
+  width: 3px;
+  height: 15px;
+  position: absolute;
+  right: -12px;
+  top: 40px;
+  display: block;
+  background-color: $icon-color;
+  transform: rotate(-45deg);
+  transition: $transition;
+}
+.open & {
+  margin: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  &:before {
+    transform: rotate(52deg);
+    right: 22px;
+    top: 23px;
+    height: 18px;
+  }
+  &:after {
+    transform: rotate(-230deg);
+    right: 22px;
+    top: 13px;
+    height: 18px;
+  }
+}
+}
+</style>
+
+</head>
+<!--***********************************************************-->
+<body>
+<!--***********************************************************-->
+
+
+
+<div class="search">
+  <input type="search" class="search-box" />
+  <span class="search-button">
+    <span class="search-icon"></span>
+  </span>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script >
+$('.search-button').click(function(){
+  $(this).parent().toggleClass('open');
+});
+</script>
+<!--***********************************************************-->
+</body>
+</html>
+<!--***********************************************************-->

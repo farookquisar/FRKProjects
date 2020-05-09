@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <div>
+    <strong>hello</strong>
+  </div>
+<button onclick="myFunction()">Click me to show cloneNode</button>
+
+<script>
+
+
+/*
+   *********************************************************************************************************************************
+                                                              cloneNode
+   *********************************************************************************************************************************
+*/
+function myFunction() {
+  var strong = document.querySelector('strong');
+  var copy = strong.cloneNode(true);
+  var div = document.querySelector('div');
+  div.appendChild(copy);
+}
+
+
+</script>
+
+</body>
+</html>

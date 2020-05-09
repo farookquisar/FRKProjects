@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+<script type="text/javascript">
+  var audios = [];
+var loading = 0;
+var cnt=0;
+  //AddNote("HANAN");
+  //AddNote("NAWAL");
+
+  for (var i = 10; i < 40; i++) {
+    AddNote("0"+i);
+  }
+
+
+function AddNote(name) {
+
+
+loading++;
+var audio = document.createElement("audio");
+audio.addEventListener("ended", function(){
+     playAud();
+});
+
+
+//audio.loop = true;
+audio.addEventListener("canplaythrough", function () {
+loading--;
+if (loading == 0) // All files are preloaded
+//StartPlayingAll();
+playAud();
+}, false);
+//alert(name);
+//audio.src = "https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/frz8ucu1yole/b/qrnhifz-recordings/o/114-" + name + ".m4a";
+audio.src = "http://www.everyayah.com/data/Alafasy_128kbps/002"+name+".mp3";
+audios.push(audio);
+}
+
+function playAud(){
+audios[cnt].play();
+cnt++;
+if (cnt===audios.length){
+  cnt=0;
+}
+}
+
+
+function StartPlayingAll() {
+
+for (var i = 0; i < audios.length; i++)
+audios[i].play();
+}
+
+
+</script>
+  </body>
+</html>

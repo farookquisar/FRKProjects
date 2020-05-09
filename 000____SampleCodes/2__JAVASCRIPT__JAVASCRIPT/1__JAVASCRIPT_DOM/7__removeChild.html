@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div>Hello</div>
+<button onclick="myFunction()">Click me to show removeChild. Click twise to see the effect</button>
+
+<script>
+
+
+/*
+   *********************************************************************************************************************************
+                                                              removeChild
+   *********************************************************************************************************************************
+*/
+function myFunction() {
+  var div = document.querySelector('div');
+var strong = document.createElement('strong');
+//strong.textContent = 'Hello';
+//div.appendChild(strong);
+div.removeChild(strong);
+}
+
+
+</script>
+
+</body>
+</html>

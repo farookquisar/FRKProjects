@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<button>Click Me</button>
+
+
+
+<script>
+/*
+   *********************************************************************************************************************************
+                                                              querySelectorAll()
+   *********************************************************************************************************************************
+   selector – one or more CSS selectors, such as "#fooId", ".fooClassName", ".class1.class2", or ".class1, .class2"
+*/
+
+
+
+var btn = document.querySelector('button');
+btn.addEventListener('click',foo);
+function foo() { alert('This is to show removeEventListener. Second time the click event will be removed.');
+btn.removeEventListener('click',foo);
+}
+
+
+</script>
+
+</body>
+</html>

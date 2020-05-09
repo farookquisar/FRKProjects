@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <div>
+    <strong>hello</strong>
+  </div>
+<button onclick="myFunction()">Click me to show insertBefore</button>
+
+<script>
+
+
+/*
+   *********************************************************************************************************************************
+                                                              insertBefore
+   *********************************************************************************************************************************
+*/
+function myFunction() {
+  var em = document.createElement('em');
+var strong = document.querySelector('strong');
+var div = document.querySelector('div');
+em.textContent = 'hi';
+div.insertBefore(em, strong);
+}
+
+
+</script>
+
+</body>
+</html>

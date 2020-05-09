@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button type="button" name="button" onclick="myFunction()">Click Me</button>
+<p>paragraph one</p>
+<p>paragraph two</p>
+<div>div one</div>
+<p>paragraph three</p>
+<div>div two</div>
+
+
+
+
+<script>
+/*
+   *********************************************************************************************************************************
+                                                              querySelectorAll()
+   *********************************************************************************************************************************
+   selector – one or more CSS selectors, such as "#fooId", ".fooClassName", ".class1.class2", or ".class1, .class2"
+*/
+
+
+
+function myFunction() {
+  var paragraphs = document.querySelectorAll('p');
+for(var p of paragraphs)
+  p.style.color = 'blue';
+}
+
+
+</script>
+
+</body>
+</html>
